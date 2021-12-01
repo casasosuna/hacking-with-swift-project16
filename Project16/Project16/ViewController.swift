@@ -20,6 +20,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let rome = Capital(title: "Rome", coordinate: CLLocationCoordinate2D(latitude: 41.9, longitude: 12.5), info: "Has a whole country inside it")
         let washington = Capital(title: "Washington DC", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(pickMapType))
+        
 //        mapView.addAnnotation(london)
 //        mapView.addAnnotation(oslo)
 //        mapView.addAnnotation(paris)
@@ -67,7 +69,26 @@ class ViewController: UIViewController, MKMapViewDelegate {
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }
+    
+    @objc func pickMapType() {
+        let ac = UIAlertController(title: "Select Map Type", message: "Pick one below", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Satellite", style: .default, handler: changeToSatellite))
+        ac.addAction(UIAlertAction(title: "Standard", style: .default, handler: changetoStandard))
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default, handler: changeToHybrid))
+        present(ac, animated: true)
+    }
+    
+    func changeToSatellite(action: UIAlertAction) {
+        mapView.mapType = .satellite
+    }
+    
+    func changetoStandard(action: UIAlertAction) {
+        mapView.mapType = .standard
+    }
 
+    func changeToHybrid(action: UIAlertAction) {
+        mapView.mapType = .hybrid
+    }
 
 }
 
