@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9640B3922758406600172E1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640B3912758406600172E1E /* DetailViewController.swift */; };
 		96B3733E2748095300E8E79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3733D2748095300E8E79B /* AppDelegate.swift */; };
 		96B373402748095300E8E79B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3733F2748095300E8E79B /* SceneDelegate.swift */; };
 		96B373422748095300E8E79B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B373412748095300E8E79B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9640B3912758406600172E1E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		96B3733A2748095300E8E79B /* Project16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B3733D2748095300E8E79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B3733F2748095300E8E79B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		96B373312748095300E8E79B = {
 			isa = PBXGroup;
 			children = (
+				9640B3912758406600172E1E /* DetailViewController.swift */,
 				96B3733C2748095300E8E79B /* Project16 */,
 				96B3733B2748095300E8E79B /* Products */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				96B373422748095300E8E79B /* ViewController.swift in Sources */,
 				96B3733E2748095300E8E79B /* AppDelegate.swift in Sources */,
+				9640B3922758406600172E1E /* DetailViewController.swift in Sources */,
 				96B37352274A135600E8E79B /* Capital.swift in Sources */,
 				96B373402748095300E8E79B /* SceneDelegate.swift in Sources */,
 			);
